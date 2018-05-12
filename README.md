@@ -31,7 +31,7 @@ ALTER TABLE country_flags2 ADD UNIQUE INDEX(board, country);
 LOAD DATA LOCAL INFILE './all_countries.txt' INTO TABLE country_flags2 SET board = 'pol';
 ```
 
-3.  Edit the "db = pymysql.connect" line in flaghunter.py to se your MariaDB username and password
+3.  Edit the "db = pymysql.connect" line in flaghunter.py to set your MariaDB username and password
 
 You may consider adding the script to crontab for automatic polling.
 
@@ -45,7 +45,7 @@ python3 flaghunter.py
 
 ## License
 
-This project is licensed under the GNU General Public License v3.0 - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE.md) file for details
 
 ## Acknowledgments
 
